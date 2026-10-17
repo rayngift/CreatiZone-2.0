@@ -1,0 +1,5 @@
+# Les fichiers envoyés ne doivent jamais être exécutés comme du code
+Options -Indexes
+<FilesMatch "\.(php|phtml|php5|phar)$">
+  Require all denied
+</FilesMatch>
